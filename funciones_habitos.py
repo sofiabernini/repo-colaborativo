@@ -9,7 +9,7 @@ Created on Thu Mar 12 13:56:52 2026
 def registrar_habitos ():
     lista_habitos = []
     pregunta_habitos = input ("¿Desea ingresar datos?")
-    while (pregunta_habitos == "Si") or (pregunta_habitos == "si"):
+    while (pregunta_habitos == "Si") or (pregunta_habitos == "si") or (pregunta_habitos == "Sí") or (pregunta_habitos == "sí"):
         datos_habitos = input("Ingrese hábitos:")
         lista_habitos.append(datos_habitos)
         pregunta_habitos = input("¿Desea ingresar más datos?")
