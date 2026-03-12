@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Mar 12 13:56:52 2026
+
+@author: victoriamochnacs
+"""
+
+def registrar_habitos ():
+    lista_habitos = []
+    pregunta_habitos = input ("¿Desea ingresar datos?")
+    while (pregunta_habitos == "Si") or (pregunta_habitos == "si"):
+        datos_habitos = input("Ingrese hábitos:")
+        lista_habitos.append(datos_habitos)
+        pregunta_habitos = input("¿Desea ingresar más datos?")
+        if pregunta_habitos == "No" or pregunta_habitos == "no":
+            break
+    return lista_habitos
+
+
+resumen = registrar_habitos ()
+print(resumen)
