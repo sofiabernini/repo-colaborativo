@@ -5,7 +5,7 @@ Created on Thu Mar 12 13:56:52 2026
 
 @author: victoriamochnacs
 """
-
+#funcion 1
 def registrar_habitos ():
     lista_actividades = []
     pregunta_habitos = input ("¿Desea agregar datos?")
@@ -20,3 +20,13 @@ def registrar_habitos ():
 
 resumen = registrar_habitos ()
 print(resumen)
+
+#funcion 2
+def analizar_habitos (lista_actividades):
+    diccio= {}
+    for i in lista_actividades:
+        if i not in diccio:
+            diccio[i]=1
+        else:
+            diccio[i]+=1
+    return diccio
